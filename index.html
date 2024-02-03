@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mdi{
+            margin-top:5%;
+            height:50px;
+            display:flex;
+            flex-wrap: wrap;
+            /* justify-content:space-around; */
+            column-gap:30px;
+        }
+        .imgg{
+            height:60px;
+            width:60px;
+        }
+        .divs{
+            /* border:1px solid black; */
+            width:60px;
+            height:60px;
+        }
+        .displ{
+            border:1px solid black;
+            height:400px;
+            width:400px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <script>
+        var disp=document.createElement("div")
+        document.body.appendChild(disp)
+        disp.setAttribute("class","displ");
+      
+
+
+
+        var mdivs=document.createElement("div");
+        document.body.appendChild(mdivs)
+        mdivs.setAttribute("class","mdi");
+
+        var div1=document.createElement("div")
+        mdivs.appendChild(div1);
+        var img1=document.createElement("img")
+        div1.appendChild(img1)
+        img1.setAttribute("src","watch1.jpg")
+        img1.setAttribute("class","imgg")
+        div1.setAttribute("class","divs")
+        img1.addEventListener("click",hello)
+
+        
+        function hello(){
+        
+           disp.style.backgroundImage="url('watch1.jpg')"
+           disp.style.backgroundSize="cover"
+
+        }
+
+        var div2=document.createElement("div")
+        mdivs.appendChild(div2);
+        var img2=document.createElement("img")
+        div2.appendChild(img2)
+        img2.setAttribute("src","watch2.jpg")
+        img2.setAttribute("class","imgg")
+        div2.setAttribute("class","divs")
+        img2.addEventListener("click",hello2)
+        function hello2(){
+        disp.style.backgroundImage="url('watch2.jpg')"
+        disp.style.backgroundSize="cover"
+        disp.style.backgroundPosition="center"
+
+
+
+     }
+        var div4=document.createElement("div")
+        mdivs.appendChild(div4);
+        var img4=document.createElement("img")
+        div4.appendChild(img4)
+        img4.setAttribute("src","watch3.jpg")
+        img4.setAttribute("class","imgg")
+        div4.setAttribute("class","divs")
+        img4.addEventListener("click",hello3)
+        function hello3(){
+        disp.style.backgroundImage="url('watch3.jpg')"
+        disp.style.backgroundSize="cover"
+        disp.style.backgroundPosition="center"
+
+
+
+     }
+     var div5=document.createElement("div")
+        mdivs.appendChild(div5);
+        var img5=document.createElement("img")
+        div5.appendChild(img5)
+        img5.setAttribute("src","watch4.jpg")
+        img5.setAttribute("class","imgg")
+        div5.setAttribute("class","divs")
+        img5.addEventListener("click",hello4)
+        function hello4(){
+        disp.style.backgroundImage="url('watch4.jpg')"
+        disp.style.backgroundSize="cover"
+        disp.style.backgroundPosition="center"
+
+
+
+     }
+</script> 
+ </body>
+ </html>
